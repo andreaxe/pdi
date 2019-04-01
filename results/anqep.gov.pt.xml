@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resultset[
+<!ELEMENT resultset (summary,results)>
+<!ELEMENT summary (status,sessionID,NumOfErrors,NumOfLikelyProblems,NumOfPotentialProblems,guidelines)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT sessionID (#PCDATA)>
+<!ELEMENT NumOfErrors (#PCDATA)>
+<!ELEMENT NumOfLikelyProblems (#PCDATA)>
+<!ELEMENT NumOfPotentialProblems (#PCDATA)>
+<!ELEMENT guidelines (guideline)*>
+<!ELEMENT guideline (#PCDATA)>
+<!ELEMENT results (result)*>
+<!ELEMENT result (resultType,lineNum,columnNum,errorMsg,errorSourceCode,repair*,sequenceID*,decisionPass*,decisionFail*,decisionMade*,decisionMadeDate*)>
+<!ELEMENT resultType (#PCDATA)>
+<!ELEMENT lineNum (#PCDATA)>
+<!ELEMENT columnNum (#PCDATA)>
+<!ELEMENT errorMsg (#PCDATA)>
+<!ELEMENT errorSourceCode (#PCDATA)>
+<!ELEMENT repair (#PCDATA)>
+<!ELEMENT sequenceID (#PCDATA)>
+<!ELEMENT decisionPass (#PCDATA)>
+<!ELEMENT decisionFail (#PCDATA)>
+<!ELEMENT decisionMade (#PCDATA)>
+<!ELEMENT decisionMadeDate (#PCDATA)>
+<!ENTITY lt "&#38;#60;">
+<!ENTITY gt "&#62;">
+<!ENTITY amp "&#38;#38;">
+<!ENTITY apos "&#39;">
+<!ENTITY quot "&#34;">
+<!ENTITY ndash "&#8211;">
+]>
+<resultset>
+  <summary>
+    <status>FAIL</status>
+    <sessionID>4e42bb239824d35afbe0c3f317d0a811e262bda6</sessionID>
+    <NumOfErrors>1</NumOfErrors>
+    <NumOfLikelyProblems>0</NumOfLikelyProblems>
+    <NumOfPotentialProblems>65</NumOfPotentialProblems>
+
+    <guidelines>
+      <guideline>WCAG 2.0 (Level A)</guideline>
+      <guideline>WCAG 2.0 (Level AA)</guideline>
+      <guideline>WCAG 2.0 (Level AAA)</guideline>
+
+    </guidelines>
+  </summary>
+
+  <results>
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>8</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=54&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=54'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;title&lt;/code&gt; might not describe the document.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;title&gt;Agncia Nacional para a Qualificao e o Ensino Profissional, IP&lt;/title&gt;</errorSourceCode>
+        
+        <sequenceID>8_1_54</sequenceID>
+        <decisionPass>&lt;code&gt;title&lt;/code&gt; describes the document.</decisionPass>
+        <decisionFail>&lt;code&gt;title&lt;/code&gt; does not describe the document.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=270&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=270'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Unicode right-to-left marks or left-to-right marks may be required.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_270</sequenceID>
+        <decisionPass>Unicode right-to-left marks or left-to-right marks are used whenever the HTML bidirectional algorithm produces undesirable results.</decisionPass>
+        <decisionFail>Unicode right-to-left marks or left-to-right marks are not used whenever the HTML bidirectional algorithm produces undesirable results.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=262&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=262'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Groups of links with a related purpose are not marked.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_262</sequenceID>
+        <decisionPass>All groups of links with a related purpose are marked.</decisionPass>
+        <decisionFail>All groups of links with a related purpose are not marked.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=98&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=98'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Abbreviations may not be marked with &lt;code&gt;abbr&lt;/code&gt; element.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_98</sequenceID>
+        <decisionPass>All abbreviations are marked with the &lt;code&gt;abbr&lt;/code&gt; element.</decisionPass>
+        <decisionFail>Not all abbreviations are marked with the &lt;code&gt;abbr&lt;/code&gt; element.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=131&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=131'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Long quotations may not be marked using the &lt;code&gt;blockquote&lt;/code&gt; element.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_131</sequenceID>
+        <decisionPass>All long quotations have been marked with the &lt;code&gt;blockquote&lt;/code&gt; element.</decisionPass>
+        <decisionFail>All long quotations are not marked with the &lt;code&gt;blockquote&lt;/code&gt; element.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=248&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=248'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Visual lists may not be properly marked.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_248</sequenceID>
+        <decisionPass>All visual lists contain proper markup.</decisionPass>
+        <decisionFail>Not all visual lists contain proper markup.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=184&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=184'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Site missing site map.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_184</sequenceID>
+        <decisionPass>Page is not part of a collection that requires a site map.</decisionPass>
+        <decisionFail>Page is part of a collection that requires a site map.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=276&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=276'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Repeated components may not appear in the same relative order each time they appear.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_276</sequenceID>
+        <decisionPass>Repeated components appear in the same relative order on this page.</decisionPass>
+        <decisionFail>Repeated components do not appear in the same relative order on this page.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=28&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=28'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Document may be missing a &quot;skip to content&quot; link.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_28</sequenceID>
+        <decisionPass>Document contians a &quot;skip to content&quot; link or does not require it.</decisionPass>
+        <decisionFail>Document does not contain a &quot;skip to content&quot; link and requires it.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=179&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=179'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Reference to glossary may be missing.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_179</sequenceID>
+        <decisionPass>A glossary document is referenced or not required.</decisionPass>
+        <decisionFail>A glossary document is not referenced but is required.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=261&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=261'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Sections may not be marked with headers.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_261</sequenceID>
+        <decisionPass>All sections of the content are marked with &lt;code&gt;headers&lt;/code&gt;.</decisionPass>
+        <decisionFail>All sections of the content are not marked with &lt;code&gt;headers&lt;/code&gt;.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=241&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=241'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Tabular information may be missing table markup.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_241</sequenceID>
+        <decisionPass>Table markup is used for all tabular information.</decisionPass>
+        <decisionFail>Table markup is not used for all tabular information.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=271&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=271'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;dir&lt;/code&gt; attribute may be required to identify changes in text direction.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_271</sequenceID>
+        <decisionPass>All changes in text direction are marked using the &lt;code&gt;dir&lt;/code&gt; attribute.</decisionPass>
+        <decisionFail>All changes in text direction are not marked using the &lt;code&gt;dir&lt;/code&gt; attribute.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=99&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=99'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Acronyms may not be marked with &lt;code&gt;acronym&lt;/code&gt; element.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_99</sequenceID>
+        <decisionPass>All acronyms are marked with the &lt;code&gt;acronym&lt;/code&gt; element.</decisionPass>
+        <decisionFail>Not all acronyms are marked with the &lt;code&gt;acronym&lt;/code&gt; element.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=250&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=250'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Text may refer to items by shape, size, or relative position alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_250</sequenceID>
+        <decisionPass>There are no references to items in the document by shape, size, or relative position alone.</decisionPass>
+        <decisionFail>There are references to items in the document by shape, size, or relative position alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>25</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=266&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=266'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Document may require a breadcrumb trail.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing= ...</errorSourceCode>
+        
+        <sequenceID>25_1_266</sequenceID>
+        <decisionPass>Document has a breadcrumb trail or does not require it.</decisionPass>
+        <decisionFail>Document does not have a breadcrumb trail and requires it.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>27</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=268&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=268'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Form submission error messages may not provide assistance.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 ...</errorSourceCode>
+        
+        <sequenceID>27_1_268</sequenceID>
+        <decisionPass>All form submission error messages provide assistance in correcting the error.</decisionPass>
+        <decisionFail>All form submission error messages do not provide assistance in correcting the errors.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>27</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=267&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=267'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Form submission error messages may not identify empty required fields.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 ...</errorSourceCode>
+        
+        <sequenceID>27_1_267</sequenceID>
+        <decisionPass>Required fields are identified in all form submission error messages.</decisionPass>
+        <decisionFail>Required fields are not identified in all form submission error messages.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Error</resultType>
+      <lineNum>27</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=168&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=168'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Form missing &lt;code&gt;fieldset&lt;/code&gt; and &lt;code&gt;legend&lt;/code&gt; to group multiple radio buttons.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 ...</errorSourceCode>
+        <repair>Add a &lt;code&gt;fieldset&lt;/code&gt; and &lt;code&gt;legend&lt;/code&gt; element to the &lt;code&gt;form&lt;/code&gt; for each group of radio buttons.</repair>
+        
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>27</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=272&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=272'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Form may delete information without allowing for recovery.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 ...</errorSourceCode>
+        
+        <sequenceID>27_1_272</sequenceID>
+        <decisionPass>Information deleted using this form can be recovered.</decisionPass>
+        <decisionFail>Information delted using this form can not be recovered.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>27</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=246&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=246'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;All required &lt;code&gt;form&lt;/code&gt; fields may not be indicated as required.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 ...</errorSourceCode>
+        
+        <sequenceID>27_1_246</sequenceID>
+        <decisionPass>All required fields are indicated to the user as required.</decisionPass>
+        <decisionFail>All required fields are not indicated to the user as required.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>27</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=265&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=265'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Tab order may not follow logical order.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 ...</errorSourceCode>
+        
+        <sequenceID>27_1_265</sequenceID>
+        <decisionPass>Tab order follows a logical order.</decisionPass>
+        <decisionFail>Tab order does not follow a logical order.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>27</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=269&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=269'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Form submission data may not be presented to the user before final acceptance of an irreversable transaction.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;form method=post action=&quot;arranque_r.aspx?&quot;&gt;
+&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 ...</errorSourceCode>
+        
+        <sequenceID>27_1_269</sequenceID>
+        <decisionPass>All form submission data is presented to the user before final acceptance for all irreversable transactions.</decisionPass>
+        <decisionFail>All form submission data is not presented to the user before final acceptance for all irreversable transactions.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>28</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=136&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=136'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Data &lt;code&gt;table&lt;/code&gt; may require &lt;code&gt;th&lt;/code&gt; elements.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 style=&quot;position:absolute; top:0%; left:0%; wi ...</errorSourceCode>
+        
+        <sequenceID>28_1_136</sequenceID>
+        <decisionPass>This is a data table (and use of &lt;code&gt;th&lt;/code&gt; is appropriate).</decisionPass>
+        <decisionFail>This is a layout table (and use of &lt;code&gt;th&lt;/code&gt; is not appropriate appropriate).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>28</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=133&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=133'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Layout &lt;code&gt;table&lt;/code&gt; may not linearize.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 style=&quot;position:absolute; top:0%; left:0%; wi ...</errorSourceCode>
+        
+        <sequenceID>28_1_133</sequenceID>
+        <decisionPass>&lt;code&gt;table&lt;/code&gt; makes sense when linearized.</decisionPass>
+        <decisionFail>&lt;code&gt;table&lt;/code&gt; does not make sense when linearized.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>31</lineNum>
+      <columnNum>2</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=136&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=136'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Data &lt;code&gt;table&lt;/code&gt; may require &lt;code&gt;th&lt;/code&gt; elements.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 style=&quot;width:50%; border:0.5em solid #c0c0c0; ...</errorSourceCode>
+        
+        <sequenceID>31_2_136</sequenceID>
+        <decisionPass>This is a data table (and use of &lt;code&gt;th&lt;/code&gt; is appropriate).</decisionPass>
+        <decisionFail>This is a layout table (and use of &lt;code&gt;th&lt;/code&gt; is not appropriate appropriate).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>31</lineNum>
+      <columnNum>2</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=133&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=133'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Layout &lt;code&gt;table&lt;/code&gt; may not linearize.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 style=&quot;width:50%; border:0.5em solid #c0c0c0; ...</errorSourceCode>
+        
+        <sequenceID>31_2_133</sequenceID>
+        <decisionPass>&lt;code&gt;table&lt;/code&gt; makes sense when linearized.</decisionPass>
+        <decisionFail>&lt;code&gt;table&lt;/code&gt; does not make sense when linearized.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>32</lineNum>
+      <columnNum>34</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=42&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=42'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;h1&lt;/code&gt; may be used for formatting.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;h1&gt;Agncia Nacional para a Qualificao e o Ensino Profissional, IP&lt;/h1&gt;</errorSourceCode>
+        
+        <sequenceID>32_34_42</sequenceID>
+        <decisionPass>This &lt;code&gt;h1&lt;/code&gt; element is really a section header.</decisionPass>
+        <decisionFail>This &lt;code&gt;h1&lt;/code&gt; element is used to format text (not really a section header).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>35</lineNum>
+      <columnNum>7</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=136&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=136'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Data &lt;code&gt;table&lt;/code&gt; may require &lt;code&gt;th&lt;/code&gt; elements.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0&gt;
+						&lt;tr&gt;
+								&lt;td style=&quot;vertical-ali ...</errorSourceCode>
+        
+        <sequenceID>35_7_136</sequenceID>
+        <decisionPass>This is a data table (and use of &lt;code&gt;th&lt;/code&gt; is appropriate).</decisionPass>
+        <decisionFail>This is a layout table (and use of &lt;code&gt;th&lt;/code&gt; is not appropriate appropriate).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>35</lineNum>
+      <columnNum>7</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=133&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=133'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Layout &lt;code&gt;table&lt;/code&gt; may not linearize.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0&gt;
+						&lt;tr&gt;
+								&lt;td style=&quot;vertical-ali ...</errorSourceCode>
+        
+        <sequenceID>35_7_133</sequenceID>
+        <decisionPass>&lt;code&gt;table&lt;/code&gt; makes sense when linearized.</decisionPass>
+        <decisionFail>&lt;code&gt;table&lt;/code&gt; does not make sense when linearized.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>38</lineNum>
+      <columnNum>11</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=136&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=136'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Data &lt;code&gt;table&lt;/code&gt; may require &lt;code&gt;th&lt;/code&gt; elements.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0&gt;
+										&lt;tr&gt;&lt;td&gt;&lt;label for=opcao1 class=&quot; ...</errorSourceCode>
+        
+        <sequenceID>38_11_136</sequenceID>
+        <decisionPass>This is a data table (and use of &lt;code&gt;th&lt;/code&gt; is appropriate).</decisionPass>
+        <decisionFail>This is a layout table (and use of &lt;code&gt;th&lt;/code&gt; is not appropriate appropriate).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>38</lineNum>
+      <columnNum>11</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=133&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=133'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Layout &lt;code&gt;table&lt;/code&gt; may not linearize.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0&gt;
+										&lt;tr&gt;&lt;td&gt;&lt;label for=opcao1 class=&quot; ...</errorSourceCode>
+        
+        <sequenceID>38_11_133</sequenceID>
+        <decisionPass>&lt;code&gt;table&lt;/code&gt; makes sense when linearized.</decisionPass>
+        <decisionFail>&lt;code&gt;table&lt;/code&gt; does not make sense when linearized.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>39</lineNum>
+      <columnNum>48</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=220&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=220'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;input&lt;/code&gt; element, &lt;code&gt;type&lt;/code&gt; of &quot;radio&quot;, label may not describe the purpose or function of the control.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=radio value=1 name=opcao id=opcao1&gt;</errorSourceCode>
+        
+        <sequenceID>39_48_220</sequenceID>
+        <decisionPass>&lt;code&gt;input&lt;/code&gt; element's label describes the purpose or function of the control.</decisionPass>
+        <decisionFail>&lt;code&gt;input&lt;/code&gt; element's label does not describe the purpose or function of the control.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>39</lineNum>
+      <columnNum>48</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=189&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=189'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;label&lt;/code&gt; may not describe its associated control.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=radio value=1 name=opcao id=opcao1&gt;</errorSourceCode>
+        
+        <sequenceID>39_48_189</sequenceID>
+        <decisionPass>&lt;code&gt;label&lt;/code&gt; describes its associated control.</decisionPass>
+        <decisionFail>&lt;code&gt;label&lt;/code&gt; does not describe its associated control.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>39</lineNum>
+      <columnNum>48</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=125&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=125'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;input&lt;/code&gt; element &lt;code&gt;label&lt;/code&gt;, &lt;code&gt;type&lt;/code&gt; of &quot;radio&quot;, is not positioned close to control.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=radio value=1 name=opcao id=opcao1&gt;</errorSourceCode>
+        
+        <sequenceID>39_48_125</sequenceID>
+        <decisionPass>Label is close to input field with type &quot;radio.&quot;</decisionPass>
+        <decisionFail>Label is not close to input field with type &quot;radio.&quot;</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>39</lineNum>
+      <columnNum>48</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=55&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=55'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;input&lt;/code&gt; possibly using color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=radio value=1 name=opcao id=opcao1&gt;</errorSourceCode>
+        
+        <sequenceID>39_48_55</sequenceID>
+        <decisionPass>&lt;code&gt;input&lt;/code&gt; element does not use color alone.</decisionPass>
+        <decisionFail>&lt;code&gt;input&lt;/code&gt; element uses color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>42</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=43&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=43'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;h2&lt;/code&gt; may be used for formatting.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;h2 class=&quot;H2&quot;&gt;
+												Seguindo esta opo ir visualizar uma verso em que as normas WCAG ...</errorSourceCode>
+        
+        <sequenceID>42_13_43</sequenceID>
+        <decisionPass>This &lt;code&gt;h2&lt;/code&gt; element is really a section header.</decisionPass>
+        <decisionFail>This &lt;code&gt;h2&lt;/code&gt; element is used to format text (not really a section header).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>51</lineNum>
+      <columnNum>10</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=136&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=136'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Data &lt;code&gt;table&lt;/code&gt; may require &lt;code&gt;th&lt;/code&gt; elements.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=5 cellspacing=0 border=0&gt;
+											&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;wwwbase/acessib ...</errorSourceCode>
+        
+        <sequenceID>51_10_136</sequenceID>
+        <decisionPass>This is a data table (and use of &lt;code&gt;th&lt;/code&gt; is appropriate).</decisionPass>
+        <decisionFail>This is a layout table (and use of &lt;code&gt;th&lt;/code&gt; is not appropriate appropriate).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>51</lineNum>
+      <columnNum>10</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=133&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=133'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Layout &lt;code&gt;table&lt;/code&gt; may not linearize.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=5 cellspacing=0 border=0&gt;
+											&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;wwwbase/acessib ...</errorSourceCode>
+        
+        <sequenceID>51_10_133</sequenceID>
+        <decisionPass>&lt;code&gt;table&lt;/code&gt; makes sense when linearized.</decisionPass>
+        <decisionFail>&lt;code&gt;table&lt;/code&gt; does not make sense when linearized.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>52</lineNum>
+      <columnNum>20</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;wwwbase/acessibilidade/aaaSimboloAcessibilidade.htm&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;wwwbase/aces ...</errorSourceCode>
+        
+        <sequenceID>52_20_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>52</lineNum>
+      <columnNum>20</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;wwwbase/acessibilidade/aaaSimboloAcessibilidade.htm&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;wwwbase/aces ...</errorSourceCode>
+        
+        <sequenceID>52_20_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>52</lineNum>
+      <columnNum>98</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=11&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=11'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text that is not in Alt text.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;wwwbase/acessibilidade/imagens/acess.gif&quot; style=&quot;border-width:0.2em;&quot; alt=&quot;Smbolo de ace ...</errorSourceCode>
+        
+        <sequenceID>52_98_11</sequenceID>
+        <decisionPass>Any text in image is also in Alt text or text in image is decorative or redundant.</decisionPass>
+        <decisionFail>Image contains some text that is not in Alt text.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>52</lineNum>
+      <columnNum>98</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;wwwbase/acessibilidade/imagens/acess.gif&quot; style=&quot;border-width:0.2em;&quot; alt=&quot;Smbolo de ace ...</errorSourceCode>
+        
+        <sequenceID>52_98_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>52</lineNum>
+      <columnNum>98</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;wwwbase/acessibilidade/imagens/acess.gif&quot; style=&quot;border-width:0.2em;&quot; alt=&quot;Smbolo de ace ...</errorSourceCode>
+        
+        <sequenceID>52_98_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>52</lineNum>
+      <columnNum>98</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=16&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=16'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text is not empty and image may be decorative.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;wwwbase/acessibilidade/imagens/acess.gif&quot; style=&quot;border-width:0.2em;&quot; alt=&quot;Smbolo de ace ...</errorSourceCode>
+        
+        <sequenceID>52_98_16</sequenceID>
+        <decisionPass>Image is not decorative.</decisionPass>
+        <decisionFail>Image is decorative.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>53</lineNum>
+      <columnNum>20</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=178&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=178'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text does not convey the same information as the image.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;wwwbase/acessibilidade/imagens/wai_aaa.jpg&quot; alt=&quot;Smbolo de conformidade nvel AAA das D ...</errorSourceCode>
+        
+        <sequenceID>53_20_178</sequenceID>
+        <decisionPass>Alt text conveys the same information as the image.</decisionPass>
+        <decisionFail>Alt text does not convey the same information as the image.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>53</lineNum>
+      <columnNum>20</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;wwwbase/acessibilidade/imagens/wai_aaa.jpg&quot; alt=&quot;Smbolo de conformidade nvel AAA das D ...</errorSourceCode>
+        
+        <sequenceID>53_20_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>53</lineNum>
+      <columnNum>20</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;wwwbase/acessibilidade/imagens/wai_aaa.jpg&quot; alt=&quot;Smbolo de conformidade nvel AAA das D ...</errorSourceCode>
+        
+        <sequenceID>53_20_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>53</lineNum>
+      <columnNum>20</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=16&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=16'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text is not empty and image may be decorative.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;wwwbase/acessibilidade/imagens/wai_aaa.jpg&quot; alt=&quot;Smbolo de conformidade nvel AAA das D ...</errorSourceCode>
+        
+        <sequenceID>53_20_16</sequenceID>
+        <decisionPass>Image is not decorative.</decisionPass>
+        <decisionFail>Image is decorative.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>61</lineNum>
+      <columnNum>7</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=136&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=136'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Data &lt;code&gt;table&lt;/code&gt; may require &lt;code&gt;th&lt;/code&gt; elements.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0&gt;
+						&lt;tr&gt;&lt;td&gt;&lt;label for=opcao2 class=&quot;H4&quot;&gt; ...</errorSourceCode>
+        
+        <sequenceID>61_7_136</sequenceID>
+        <decisionPass>This is a data table (and use of &lt;code&gt;th&lt;/code&gt; is appropriate).</decisionPass>
+        <decisionFail>This is a layout table (and use of &lt;code&gt;th&lt;/code&gt; is not appropriate appropriate).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>61</lineNum>
+      <columnNum>7</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=133&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=133'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Layout &lt;code&gt;table&lt;/code&gt; may not linearize.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0&gt;
+						&lt;tr&gt;&lt;td&gt;&lt;label for=opcao2 class=&quot;H4&quot;&gt; ...</errorSourceCode>
+        
+        <sequenceID>61_7_133</sequenceID>
+        <decisionPass>&lt;code&gt;table&lt;/code&gt; makes sense when linearized.</decisionPass>
+        <decisionFail>&lt;code&gt;table&lt;/code&gt; does not make sense when linearized.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>62</lineNum>
+      <columnNum>44</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=220&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=220'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;input&lt;/code&gt; element, &lt;code&gt;type&lt;/code&gt; of &quot;radio&quot;, label may not describe the purpose or function of the control.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=radio value=2 name=opcao id=opcao2&gt;</errorSourceCode>
+        
+        <sequenceID>62_44_220</sequenceID>
+        <decisionPass>&lt;code&gt;input&lt;/code&gt; element's label describes the purpose or function of the control.</decisionPass>
+        <decisionFail>&lt;code&gt;input&lt;/code&gt; element's label does not describe the purpose or function of the control.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>62</lineNum>
+      <columnNum>44</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=189&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=189'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;label&lt;/code&gt; may not describe its associated control.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=radio value=2 name=opcao id=opcao2&gt;</errorSourceCode>
+        
+        <sequenceID>62_44_189</sequenceID>
+        <decisionPass>&lt;code&gt;label&lt;/code&gt; describes its associated control.</decisionPass>
+        <decisionFail>&lt;code&gt;label&lt;/code&gt; does not describe its associated control.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>62</lineNum>
+      <columnNum>44</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=125&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=125'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;input&lt;/code&gt; element &lt;code&gt;label&lt;/code&gt;, &lt;code&gt;type&lt;/code&gt; of &quot;radio&quot;, is not positioned close to control.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=radio value=2 name=opcao id=opcao2&gt;</errorSourceCode>
+        
+        <sequenceID>62_44_125</sequenceID>
+        <decisionPass>Label is close to input field with type &quot;radio.&quot;</decisionPass>
+        <decisionFail>Label is not close to input field with type &quot;radio.&quot;</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>62</lineNum>
+      <columnNum>44</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=55&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=55'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;input&lt;/code&gt; possibly using color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=radio value=2 name=opcao id=opcao2&gt;</errorSourceCode>
+        
+        <sequenceID>62_44_55</sequenceID>
+        <decisionPass>&lt;code&gt;input&lt;/code&gt; element does not use color alone.</decisionPass>
+        <decisionFail>&lt;code&gt;input&lt;/code&gt; element uses color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>65</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=43&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=43'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;h2&lt;/code&gt; may be used for formatting.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;h2 class=&quot;H2&quot;&gt;
+								Esta opo dar acesso a uma verso que privilegia os contedos mais g ...</errorSourceCode>
+        
+        <sequenceID>65_9_43</sequenceID>
+        <decisionPass>This &lt;code&gt;h2&lt;/code&gt; element is really a section header.</decisionPass>
+        <decisionFail>This &lt;code&gt;h2&lt;/code&gt; element is used to format text (not really a section header).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>76</lineNum>
+      <columnNum>7</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=136&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=136'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Data &lt;code&gt;table&lt;/code&gt; may require &lt;code&gt;th&lt;/code&gt; elements.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 height=&quot;1%&quot; width=&quot;100%&quot; style=&quot;background-co ...</errorSourceCode>
+        
+        <sequenceID>76_7_136</sequenceID>
+        <decisionPass>This is a data table (and use of &lt;code&gt;th&lt;/code&gt; is appropriate).</decisionPass>
+        <decisionFail>This is a layout table (and use of &lt;code&gt;th&lt;/code&gt; is not appropriate appropriate).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>76</lineNum>
+      <columnNum>7</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=133&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=133'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Layout &lt;code&gt;table&lt;/code&gt; may not linearize.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=0 cellspacing=0 border=0 height=&quot;1%&quot; width=&quot;100%&quot; style=&quot;background-co ...</errorSourceCode>
+        
+        <sequenceID>76_7_133</sequenceID>
+        <decisionPass>&lt;code&gt;table&lt;/code&gt; makes sense when linearized.</decisionPass>
+        <decisionFail>&lt;code&gt;table&lt;/code&gt; does not make sense when linearized.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>78</lineNum>
+      <columnNum>50</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=123&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=123'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;input&lt;/code&gt; element &lt;code&gt;label&lt;/code&gt;, &lt;code&gt;type&lt;/code&gt; of &quot;checkbox&quot; is not positioned close to control.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=checkbox name=&quot;gravar&quot; id=chk value=&quot;1&quot;&gt;</errorSourceCode>
+        
+        <sequenceID>78_50_123</sequenceID>
+        <decisionPass>Label is close to input field with type &quot;checkbox.&quot;</decisionPass>
+        <decisionFail>Label is not close to input field with type &quot;checkbox.&quot;</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>78</lineNum>
+      <columnNum>50</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=189&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=189'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;label&lt;/code&gt; may not describe its associated control.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=checkbox name=&quot;gravar&quot; id=chk value=&quot;1&quot;&gt;</errorSourceCode>
+        
+        <sequenceID>78_50_189</sequenceID>
+        <decisionPass>&lt;code&gt;label&lt;/code&gt; describes its associated control.</decisionPass>
+        <decisionFail>&lt;code&gt;label&lt;/code&gt; does not describe its associated control.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>78</lineNum>
+      <columnNum>50</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=219&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=219'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;input&lt;/code&gt; element, &lt;code&gt;type&lt;/code&gt; of &quot;checkbox&quot;, label may not describe the purpose or function of the control.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=checkbox name=&quot;gravar&quot; id=chk value=&quot;1&quot;&gt;</errorSourceCode>
+        
+        <sequenceID>78_50_219</sequenceID>
+        <decisionPass>&lt;code&gt;input&lt;/code&gt; element's label describes the purpose or function of the control.</decisionPass>
+        <decisionFail>&lt;code&gt;input&lt;/code&gt; element's label does not describe the purpose or function of the control.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>78</lineNum>
+      <columnNum>50</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=55&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=55'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;input&lt;/code&gt; possibly using color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=checkbox name=&quot;gravar&quot; id=chk value=&quot;1&quot;&gt;</errorSourceCode>
+        
+        <sequenceID>78_50_55</sequenceID>
+        <decisionPass>&lt;code&gt;input&lt;/code&gt; element does not use color alone.</decisionPass>
+        <decisionFail>&lt;code&gt;input&lt;/code&gt; element uses color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>80</lineNum>
+      <columnNum>50</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=189&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=189'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;label&lt;/code&gt; may not describe its associated control.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=submit value=&quot;Entrar &gt;&gt;&quot; style=&quot;width:10em;&quot;&gt;</errorSourceCode>
+        
+        <sequenceID>80_50_189</sequenceID>
+        <decisionPass>&lt;code&gt;label&lt;/code&gt; describes its associated control.</decisionPass>
+        <decisionFail>&lt;code&gt;label&lt;/code&gt; does not describe its associated control.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>80</lineNum>
+      <columnNum>50</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=55&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=55'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;input&lt;/code&gt; possibly using color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;input type=submit value=&quot;Entrar &gt;&gt;&quot; style=&quot;width:10em;&quot;&gt;</errorSourceCode>
+        
+        <sequenceID>80_50_55</sequenceID>
+        <decisionPass>&lt;code&gt;input&lt;/code&gt; element does not use color alone.</decisionPass>
+        <decisionFail>&lt;code&gt;input&lt;/code&gt; element uses color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>87</lineNum>
+      <columnNum>2</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=136&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=136'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Data &lt;code&gt;table&lt;/code&gt; may require &lt;code&gt;th&lt;/code&gt; elements.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=5 cellspacing=0 border=0 style=&quot;width:50%; background-color:#ff0000;&quot;&gt; ...</errorSourceCode>
+        
+        <sequenceID>87_2_136</sequenceID>
+        <decisionPass>This is a data table (and use of &lt;code&gt;th&lt;/code&gt; is appropriate).</decisionPass>
+        <decisionFail>This is a layout table (and use of &lt;code&gt;th&lt;/code&gt; is not appropriate appropriate).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>87</lineNum>
+      <columnNum>2</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=133&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=133'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Layout &lt;code&gt;table&lt;/code&gt; may not linearize.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;table summary=&quot;&quot; cellpadding=5 cellspacing=0 border=0 style=&quot;width:50%; background-color:#ff0000;&quot;&gt; ...</errorSourceCode>
+        
+        <sequenceID>87_2_133</sequenceID>
+        <decisionPass>&lt;code&gt;table&lt;/code&gt; makes sense when linearized.</decisionPass>
+        <decisionFail>&lt;code&gt;table&lt;/code&gt; does not make sense when linearized.</decisionFail>
+
+    </result> 
+
+  </results>
+</resultset>

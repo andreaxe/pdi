@@ -1,0 +1,2158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resultset[
+<!ELEMENT resultset (summary,results)>
+<!ELEMENT summary (status,sessionID,NumOfErrors,NumOfLikelyProblems,NumOfPotentialProblems,guidelines)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT sessionID (#PCDATA)>
+<!ELEMENT NumOfErrors (#PCDATA)>
+<!ELEMENT NumOfLikelyProblems (#PCDATA)>
+<!ELEMENT NumOfPotentialProblems (#PCDATA)>
+<!ELEMENT guidelines (guideline)*>
+<!ELEMENT guideline (#PCDATA)>
+<!ELEMENT results (result)*>
+<!ELEMENT result (resultType,lineNum,columnNum,errorMsg,errorSourceCode,repair*,sequenceID*,decisionPass*,decisionFail*,decisionMade*,decisionMadeDate*)>
+<!ELEMENT resultType (#PCDATA)>
+<!ELEMENT lineNum (#PCDATA)>
+<!ELEMENT columnNum (#PCDATA)>
+<!ELEMENT errorMsg (#PCDATA)>
+<!ELEMENT errorSourceCode (#PCDATA)>
+<!ELEMENT repair (#PCDATA)>
+<!ELEMENT sequenceID (#PCDATA)>
+<!ELEMENT decisionPass (#PCDATA)>
+<!ELEMENT decisionFail (#PCDATA)>
+<!ELEMENT decisionMade (#PCDATA)>
+<!ELEMENT decisionMadeDate (#PCDATA)>
+<!ENTITY lt "&#38;#60;">
+<!ENTITY gt "&#62;">
+<!ENTITY amp "&#38;#38;">
+<!ENTITY apos "&#39;">
+<!ENTITY quot "&#34;">
+<!ENTITY ndash "&#8211;">
+]>
+<resultset>
+  <summary>
+    <status>FAIL</status>
+    <sessionID>801ee62ec0d25ff9b2f152cb29c30af5434bd3f9</sessionID>
+    <NumOfErrors>1</NumOfErrors>
+    <NumOfLikelyProblems>0</NumOfLikelyProblems>
+    <NumOfPotentialProblems>133</NumOfPotentialProblems>
+
+    <guidelines>
+      <guideline>WCAG 2.0 (Level A)</guideline>
+      <guideline>WCAG 2.0 (Level AA)</guideline>
+      <guideline>WCAG 2.0 (Level AAA)</guideline>
+
+    </guidelines>
+  </summary>
+
+  <results>
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>40</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=86&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=86'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may use color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot; src=&quot;http://use.typekit.com/vkl6jju.js&quot;&gt;&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>40_1_86</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not use color alone.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; uses color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>40</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=89&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=89'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; user interface may not be accessible.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot; src=&quot;http://use.typekit.com/vkl6jju.js&quot;&gt;&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>40_1_89</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; user interface is accessible.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; user interface is not accessible.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>40</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=87&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=87'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may cause screen flicker.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot; src=&quot;http://use.typekit.com/vkl6jju.js&quot;&gt;&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>40_1_87</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not cause screen flicker.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; causes screen flicker.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>41</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=86&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=86'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may use color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;try{Typekit.load();}catch(e){}&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>41_1_86</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not use color alone.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; uses color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>41</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=89&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=89'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; user interface may not be accessible.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;try{Typekit.load();}catch(e){}&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>41_1_89</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; user interface is accessible.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; user interface is not accessible.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>41</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=87&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=87'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may cause screen flicker.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;try{Typekit.load();}catch(e){}&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>41_1_87</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not cause screen flicker.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; causes screen flicker.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>46</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=86&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=86'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may use color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot; src=&quot;/min.js&quot;&gt;&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>46_1_86</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not use color alone.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; uses color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>46</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=89&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=89'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; user interface may not be accessible.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot; src=&quot;/min.js&quot;&gt;&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>46_1_89</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; user interface is accessible.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; user interface is not accessible.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>46</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=87&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=87'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may cause screen flicker.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot; src=&quot;/min.js&quot;&gt;&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>46_1_87</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not cause screen flicker.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; causes screen flicker.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>47</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=86&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=86'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may use color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script src=&quot;/fancybox/jquery.fancybox-1.3.4.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>47_1_86</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not use color alone.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; uses color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>47</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=89&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=89'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; user interface may not be accessible.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script src=&quot;/fancybox/jquery.fancybox-1.3.4.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>47_1_89</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; user interface is accessible.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; user interface is not accessible.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>47</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=87&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=87'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may cause screen flicker.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script src=&quot;/fancybox/jquery.fancybox-1.3.4.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</errorSourceCode>
+        
+        <sequenceID>47_1_87</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not cause screen flicker.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; causes screen flicker.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>50</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=86&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=86'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may use color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;
+    var _gaq = _gaq || [];
+    _gaq.push([&#039;_setAccount&#039;, &#039;UA-164509- ...</errorSourceCode>
+        
+        <sequenceID>50_1_86</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not use color alone.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; uses color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>50</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=89&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=89'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; user interface may not be accessible.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;
+    var _gaq = _gaq || [];
+    _gaq.push([&#039;_setAccount&#039;, &#039;UA-164509- ...</errorSourceCode>
+        
+        <sequenceID>50_1_89</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; user interface is accessible.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; user interface is not accessible.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>50</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=87&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=87'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may cause screen flicker.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;
+    var _gaq = _gaq || [];
+    _gaq.push([&#039;_setAccount&#039;, &#039;UA-164509- ...</errorSourceCode>
+        
+        <sequenceID>50_1_87</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not cause screen flicker.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; causes screen flicker.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>65</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=86&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=86'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may use color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;
+	$(document).ready(function() {
+		$(&quot;.fancybox&quot;).fancybox();
+	});
+
+
+ ...</errorSourceCode>
+        
+        <sequenceID>65_1_86</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not use color alone.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; uses color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>65</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=89&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=89'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; user interface may not be accessible.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;
+	$(document).ready(function() {
+		$(&quot;.fancybox&quot;).fancybox();
+	});
+
+
+ ...</errorSourceCode>
+        
+        <sequenceID>65_1_89</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; user interface is accessible.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; user interface is not accessible.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>65</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=87&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=87'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may cause screen flicker.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;
+	$(document).ready(function() {
+		$(&quot;.fancybox&quot;).fancybox();
+	});
+
+
+ ...</errorSourceCode>
+        
+        <sequenceID>65_1_87</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not cause screen flicker.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; causes screen flicker.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>72</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=54&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=54'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;title&lt;/code&gt; might not describe the document.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;title&gt;RBE&lt;/title&gt;</errorSourceCode>
+        
+        <sequenceID>72_5_54</sequenceID>
+        <decisionPass>&lt;code&gt;title&lt;/code&gt; describes the document.</decisionPass>
+        <decisionFail>&lt;code&gt;title&lt;/code&gt; does not describe the document.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>74</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=86&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=86'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may use color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;
+        //&lt;![CDATA[
+        
+var eventosA =[{&quot;summary&quot;:&quot;&quot;,&quot;data&quot;:&quot;23 ...</errorSourceCode>
+        
+        <sequenceID>74_5_86</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not use color alone.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; uses color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>74</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=89&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=89'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; user interface may not be accessible.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;
+        //&lt;![CDATA[
+        
+var eventosA =[{&quot;summary&quot;:&quot;&quot;,&quot;data&quot;:&quot;23 ...</errorSourceCode>
+        
+        <sequenceID>74_5_89</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; user interface is accessible.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; user interface is not accessible.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>74</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=87&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=87'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;script&lt;/code&gt; may cause screen flicker.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;script type=&quot;text/javascript&quot;&gt;
+        //&lt;![CDATA[
+        
+var eventosA =[{&quot;summary&quot;:&quot;&quot;,&quot;data&quot;:&quot;23 ...</errorSourceCode>
+        
+        <sequenceID>74_5_87</sequenceID>
+        <decisionPass>&lt;code&gt;script&lt;/code&gt; does not cause screen flicker.</decisionPass>
+        <decisionFail>&lt;code&gt;script&lt;/code&gt; causes screen flicker.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=270&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=270'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Unicode right-to-left marks or left-to-right marks may be required.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_270</sequenceID>
+        <decisionPass>Unicode right-to-left marks or left-to-right marks are used whenever the HTML bidirectional algorithm produces undesirable results.</decisionPass>
+        <decisionFail>Unicode right-to-left marks or left-to-right marks are not used whenever the HTML bidirectional algorithm produces undesirable results.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=262&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=262'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Groups of links with a related purpose are not marked.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_262</sequenceID>
+        <decisionPass>All groups of links with a related purpose are marked.</decisionPass>
+        <decisionFail>All groups of links with a related purpose are not marked.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=98&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=98'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Abbreviations may not be marked with &lt;code&gt;abbr&lt;/code&gt; element.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_98</sequenceID>
+        <decisionPass>All abbreviations are marked with the &lt;code&gt;abbr&lt;/code&gt; element.</decisionPass>
+        <decisionFail>Not all abbreviations are marked with the &lt;code&gt;abbr&lt;/code&gt; element.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=131&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=131'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Long quotations may not be marked using the &lt;code&gt;blockquote&lt;/code&gt; element.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_131</sequenceID>
+        <decisionPass>All long quotations have been marked with the &lt;code&gt;blockquote&lt;/code&gt; element.</decisionPass>
+        <decisionFail>All long quotations are not marked with the &lt;code&gt;blockquote&lt;/code&gt; element.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=248&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=248'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Visual lists may not be properly marked.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_248</sequenceID>
+        <decisionPass>All visual lists contain proper markup.</decisionPass>
+        <decisionFail>Not all visual lists contain proper markup.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=184&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=184'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Site missing site map.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_184</sequenceID>
+        <decisionPass>Page is not part of a collection that requires a site map.</decisionPass>
+        <decisionFail>Page is part of a collection that requires a site map.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=276&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=276'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Repeated components may not appear in the same relative order each time they appear.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_276</sequenceID>
+        <decisionPass>Repeated components appear in the same relative order on this page.</decisionPass>
+        <decisionFail>Repeated components do not appear in the same relative order on this page.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=28&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=28'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Document may be missing a &quot;skip to content&quot; link.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_28</sequenceID>
+        <decisionPass>Document contians a &quot;skip to content&quot; link or does not require it.</decisionPass>
+        <decisionFail>Document does not contain a &quot;skip to content&quot; link and requires it.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=179&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=179'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Reference to glossary may be missing.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_179</sequenceID>
+        <decisionPass>A glossary document is referenced or not required.</decisionPass>
+        <decisionFail>A glossary document is not referenced but is required.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=261&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=261'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Sections may not be marked with headers.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_261</sequenceID>
+        <decisionPass>All sections of the content are marked with &lt;code&gt;headers&lt;/code&gt;.</decisionPass>
+        <decisionFail>All sections of the content are not marked with &lt;code&gt;headers&lt;/code&gt;.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=271&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=271'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;dir&lt;/code&gt; attribute may be required to identify changes in text direction.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_271</sequenceID>
+        <decisionPass>All changes in text direction are marked using the &lt;code&gt;dir&lt;/code&gt; attribute.</decisionPass>
+        <decisionFail>All changes in text direction are not marked using the &lt;code&gt;dir&lt;/code&gt; attribute.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=99&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=99'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Acronyms may not be marked with &lt;code&gt;acronym&lt;/code&gt; element.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_99</sequenceID>
+        <decisionPass>All acronyms are marked with the &lt;code&gt;acronym&lt;/code&gt; element.</decisionPass>
+        <decisionFail>Not all acronyms are marked with the &lt;code&gt;acronym&lt;/code&gt; element.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=250&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=250'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Text may refer to items by shape, size, or relative position alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_250</sequenceID>
+        <decisionPass>There are no references to items in the document by shape, size, or relative position alone.</decisionPass>
+        <decisionFail>There are references to items in the document by shape, size, or relative position alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>96</lineNum>
+      <columnNum>1</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=266&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=266'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Document may require a breadcrumb trail.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;body&gt;
+
+&lt;div id=&quot;out&quot;&gt;
+    &lt;div id=&quot;content&quot; style=&quot;background-image:none;&quot;&gt;
+        &lt;div class=&quot;top ...</errorSourceCode>
+        
+        <sequenceID>96_1_266</sequenceID>
+        <decisionPass>Document has a breadcrumb trail or does not require it.</decisionPass>
+        <decisionFail>Document does not have a breadcrumb trail and requires it.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>102</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=178&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=178'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text does not convey the same information as the image.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto1&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>102_13_178</sequenceID>
+        <decisionPass>Alt text conveys the same information as the image.</decisionPass>
+        <decisionFail>Alt text does not convey the same information as the image.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>102</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto1&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>102_13_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>102</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto1&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>102_13_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>103</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=178&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=178'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text does not convey the same information as the image.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto2&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>103_13_178</sequenceID>
+        <decisionPass>Alt text conveys the same information as the image.</decisionPass>
+        <decisionFail>Alt text does not convey the same information as the image.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>103</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto2&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>103_13_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>103</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto2&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>103_13_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>104</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=178&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=178'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text does not convey the same information as the image.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto3&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>104_13_178</sequenceID>
+        <decisionPass>Alt text conveys the same information as the image.</decisionPass>
+        <decisionFail>Alt text does not convey the same information as the image.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>104</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto3&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>104_13_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>104</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto3&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>104_13_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>105</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=178&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=178'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text does not convey the same information as the image.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto4&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>105_13_178</sequenceID>
+        <decisionPass>Alt text conveys the same information as the image.</decisionPass>
+        <decisionFail>Alt text does not convey the same information as the image.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>105</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto4&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>105_13_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>105</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto4&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>105_13_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>106</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=178&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=178'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text does not convey the same information as the image.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto5&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>106_13_178</sequenceID>
+        <decisionPass>Alt text conveys the same information as the image.</decisionPass>
+        <decisionFail>Alt text does not convey the same information as the image.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>106</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto5&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>106_13_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>106</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto5&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>106_13_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>107</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=178&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=178'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text does not convey the same information as the image.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto6&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>107_13_178</sequenceID>
+        <decisionPass>Alt text conveys the same information as the image.</decisionPass>
+        <decisionFail>Alt text does not convey the same information as the image.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>107</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto6&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>107_13_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>107</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img id=&quot;dfoto6&quot; src=&quot;/img/50black.png&quot; width=&quot;880&quot; height=&quot;520&quot; alt=&quot;&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>107_13_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>112</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>112_32_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>112</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>112_32_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>113</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>113_32_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>113</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>113_32_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>114</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>114_32_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>114</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>114_32_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>115</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>115_32_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>115</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>115_32_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>116</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>116_32_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>116</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>116_32_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>117</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;6&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>117_32_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>117</lineNum>
+      <columnNum>32</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;#&quot;&gt;6&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>117_32_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>128</lineNum>
+      <columnNum>24</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.rbe.mec.pt/np4/noticias&quot;&gt;NOTCIAS&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>128_24_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>128</lineNum>
+      <columnNum>24</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.rbe.mec.pt/np4/noticias&quot;&gt;NOTCIAS&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>128_24_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>129</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.rbe.mec.pt/np4/noticias&quot;&gt;&lt;span class=&quot;mes&quot;&gt;&lt;/span&gt;&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>129_5_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>129</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.rbe.mec.pt/np4/noticias&quot;&gt;&lt;span class=&quot;mes&quot;&gt;&lt;/span&gt;&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>129_5_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>138</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://acesso.umic.pt&quot; target=&quot;_blank&quot; style=&quot;float:left;padding-right:5px;&quot;&gt;&lt;img
+          ...</errorSourceCode>
+        
+        <sequenceID>138_9_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>138</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://acesso.umic.pt&quot; target=&quot;_blank&quot; style=&quot;float:left;padding-right:5px;&quot;&gt;&lt;img
+          ...</errorSourceCode>
+        
+        <sequenceID>138_9_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>138</lineNum>
+      <columnNum>95</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img
+                src=&quot;/img/logoAAA.png&quot; alt=&quot;Stio acessvel&quot; width=&quot;24&quot; height=&quot;24&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>138_95_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>138</lineNum>
+      <columnNum>95</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img
+                src=&quot;/img/logoAAA.png&quot; alt=&quot;Stio acessvel&quot; width=&quot;24&quot; height=&quot;24&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>138_95_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>138</lineNum>
+      <columnNum>95</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=16&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=16'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text is not empty and image may be decorative.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img
+                src=&quot;/img/logoAAA.png&quot; alt=&quot;Stio acessvel&quot; width=&quot;24&quot; height=&quot;24&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>138_95_16</sequenceID>
+        <decisionPass>Image is not decorative.</decisionPass>
+        <decisionFail>Image is decorative.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>143</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://validator.w3.org&quot;&gt;nbsp;W3C Valid XHTML&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>143_13_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>143</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://validator.w3.org&quot;&gt;nbsp;W3C Valid XHTML&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>143_13_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>144</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://jigsaw.w3.org/css-validator/&quot;&gt;W3C Valid CSS&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>144_13_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>144</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://jigsaw.w3.org/css-validator/&quot;&gt;W3C Valid CSS&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>144_13_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>146</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.acesso.umic.pt&quot;&gt;nbsp;UMIC Web@x&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>146_13_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>146</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.acesso.umic.pt&quot;&gt;nbsp;UMIC Web@x&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>146_13_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>147</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.sidar.org/hera/&quot;&gt;HERA&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>147_13_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>147</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.sidar.org/hera/&quot;&gt;HERA&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>147_13_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>149</lineNum>
+      <columnNum>30</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/english.html&quot;&gt;English version&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>149_30_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>149</lineNum>
+      <columnNum>30</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/english.html&quot;&gt;English version&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>149_30_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>150</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/deed.pt&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/img/cc ...</errorSourceCode>
+        
+        <sequenceID>150_13_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>150</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-nd/4.0/deed.pt&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/img/cc ...</errorSourceCode>
+        
+        <sequenceID>150_13_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>150</lineNum>
+      <columnNum>96</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/cc.png&quot; alt=&quot;Creative Commons&quot; width=&quot;75&quot; height=&quot;20&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>150_96_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>150</lineNum>
+      <columnNum>96</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/cc.png&quot; alt=&quot;Creative Commons&quot; width=&quot;75&quot; height=&quot;20&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>150_96_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>150</lineNum>
+      <columnNum>96</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=16&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=16'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text is not empty and image may be decorative.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/cc.png&quot; alt=&quot;Creative Commons&quot; width=&quot;75&quot; height=&quot;20&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>150_96_16</sequenceID>
+        <decisionPass>Image is not decorative.</decisionPass>
+        <decisionFail>Image is decorative.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>154</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://moodle.rbe.mec.pt&quot; target=&quot;_blank&quot;&gt;E-Learning&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>154_13_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>154</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://moodle.rbe.mec.pt&quot; target=&quot;_blank&quot;&gt;E-Learning&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>154_13_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>155</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://blogue.rbe.mec.pt/&quot; target=&quot;_blank&quot;&gt;Blogue&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>155_13_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>155</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://blogue.rbe.mec.pt/&quot; target=&quot;_blank&quot;&gt;Blogue&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>155_13_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>156</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.facebook.com/rbeportugal&quot; target=&quot;_blank&quot;&gt;FACEBOOK&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>156_13_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>156</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.facebook.com/rbeportugal&quot; target=&quot;_blank&quot;&gt;FACEBOOK&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>156_13_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>157</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://twitter.com/rbe_pt&quot; target=&quot;_blank&quot;&gt;TWITTER&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>157_13_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>157</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://twitter.com/rbe_pt&quot; target=&quot;_blank&quot;&gt;TWITTER&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>157_13_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>158</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.youtube.com/user/blogrbe&quot; target=&quot;_blank&quot;&gt;Youtube&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>158_13_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>158</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.youtube.com/user/blogrbe&quot; target=&quot;_blank&quot;&gt;Youtube&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>158_13_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>159</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/rss&quot; target=&quot;_blank&quot;&gt;RSS&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>159_13_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>159</lineNum>
+      <columnNum>13</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/rss&quot; target=&quot;_blank&quot;&gt;RSS&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>159_13_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>162</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.portugal.gov.pt/pt.aspx&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/img/me.png&quot; alt=&quot;Ministrio ...</errorSourceCode>
+        
+        <sequenceID>162_9_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>162</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;http://www.portugal.gov.pt/pt.aspx&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/img/me.png&quot; alt=&quot;Ministrio ...</errorSourceCode>
+        
+        <sequenceID>162_9_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>162</lineNum>
+      <columnNum>70</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=11&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=11'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text that is not in Alt text.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/me.png&quot; alt=&quot;Ministrio da Educao&quot; width=&quot;160&quot; height=&quot;79&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>162_70_11</sequenceID>
+        <decisionPass>Any text in image is also in Alt text or text in image is decorative or redundant.</decisionPass>
+        <decisionFail>Image contains some text that is not in Alt text.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>162</lineNum>
+      <columnNum>70</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=8&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=8'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;&lt;code&gt;img&lt;/code&gt; element may require a long description.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/me.png&quot; alt=&quot;Ministrio da Educao&quot; width=&quot;160&quot; height=&quot;79&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>162_70_8</sequenceID>
+        <decisionPass>Image does not require a long description or a long description is provided.</decisionPass>
+        <decisionFail>Image requires a long description and is not properly marked.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>162</lineNum>
+      <columnNum>70</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/me.png&quot; alt=&quot;Ministrio da Educao&quot; width=&quot;160&quot; height=&quot;79&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>162_70_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>162</lineNum>
+      <columnNum>70</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=14&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=14'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may be using color alone.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/me.png&quot; alt=&quot;Ministrio da Educao&quot; width=&quot;160&quot; height=&quot;79&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>162_70_14</sequenceID>
+        <decisionPass>There are no references to this image using color alone.</decisionPass>
+        <decisionFail>There is a reference to this image using color alone.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>162</lineNum>
+      <columnNum>70</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/me.png&quot; alt=&quot;Ministrio da Educao&quot; width=&quot;160&quot; height=&quot;79&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>162_70_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>162</lineNum>
+      <columnNum>70</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=16&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=16'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text is not empty and image may be decorative.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/me.png&quot; alt=&quot;Ministrio da Educao&quot; width=&quot;160&quot; height=&quot;79&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>162_70_16</sequenceID>
+        <decisionPass>Image is not decorative.</decisionPass>
+        <decisionFail>Image is decorative.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>169</lineNum>
+      <columnNum>16</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/home&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;RBE&quot; width=&quot;169&quot; height=&quot;40&quot;/&gt;&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>169_16_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>169</lineNum>
+      <columnNum>16</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/home&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;RBE&quot; width=&quot;169&quot; height=&quot;40&quot;/&gt;&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>169_16_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>169</lineNum>
+      <columnNum>36</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=253&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=253'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;This image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/logo.png&quot; alt=&quot;RBE&quot; width=&quot;169&quot; height=&quot;40&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>169_36_253</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>169</lineNum>
+      <columnNum>36</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=251&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=251'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Image may contain text with poor contrast.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/logo.png&quot; alt=&quot;RBE&quot; width=&quot;169&quot; height=&quot;40&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>169_36_251</sequenceID>
+        <decisionPass>Image does not contain text with a poor contrast ratio.</decisionPass>
+        <decisionFail>Image contains text with poor contrast ratio.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>169</lineNum>
+      <columnNum>36</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=16&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=16'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Alt text is not empty and image may be decorative.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;img src=&quot;/img/logo.png&quot; alt=&quot;RBE&quot; width=&quot;169&quot; height=&quot;40&quot;/&gt;</errorSourceCode>
+        
+        <sequenceID>169_36_16</sequenceID>
+        <decisionPass>Image is not decorative.</decisionPass>
+        <decisionFail>Image is decorative.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>172</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/contactos.html&quot; &gt;CONTACTOS&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>172_5_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>172</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/contactos.html&quot; &gt;CONTACTOS&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>172_5_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>173</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/links.html&quot; &gt;LIGAES&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>173_5_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>173</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/links.html&quot; &gt;LIGAES&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>173_5_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>174</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/mapa.html&quot; &gt;MAPA&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>174_5_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>174</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/mapa.html&quot; &gt;MAPA&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>174_5_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>175</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/faq.html&quot; &gt;FAQ&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>175_5_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>175</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/faq.html&quot; &gt;FAQ&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>175_5_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Error</resultType>
+      <lineNum>176</lineNum>
+      <columnNum>5</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=306&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=306'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;span style=&quot;color:#666;text-shadow:#fff 0 1px 1px&quot;&gt;ACESSO gt;&lt;/span&gt;</errorSourceCode>
+        <repair>Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.
+
+http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head</repair>
+        
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>177</lineNum>
+      <columnNum>22</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a
+            href=&quot;/np4/sistemaInformacao.html&quot; &gt;SISTEMA
+        DE INFORMAO&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>177_22_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>177</lineNum>
+      <columnNum>22</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a
+            href=&quot;/np4/sistemaInformacao.html&quot; &gt;SISTEMA
+        DE INFORMAO&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>177_22_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>182</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/home&quot; class=&quot;selected&quot;&gt;Destaques&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>182_9_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>182</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/home&quot; class=&quot;selected&quot;&gt;Destaques&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>182_9_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>183</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/programa.html&quot; &gt;Programa&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>183_9_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>183</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/programa.html&quot; &gt;Programa&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>183_9_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>184</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/bibliotecas&quot; &gt;Bibliotecas&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>184_9_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>184</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/bibliotecas&quot; &gt;Bibliotecas&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>184_9_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>185</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=197&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=197'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Anchor text may not identify the link destination.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/conteudos&quot; &gt;Contedos&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>185_9_197</sequenceID>
+        <decisionPass>Anchor has text that identifies the link destination.</decisionPass>
+        <decisionFail>Anchor does not have text that identifies the link destination.</decisionFail>
+
+    </result> 
+    <result>
+      <resultType>Potential Problem</resultType>
+      <lineNum>185</lineNum>
+      <columnNum>9</columnNum>
+      <errorMsg>&lt;a href=&quot;https://achecker.ca/checker/suggestion.php?id=19&quot;
+               onclick=&quot;AChecker.popup('https://achecker.ca/checker/suggestion.php?id=19'); return false;&quot; 
+               title=&quot;Suggest improvements on this error message&quot; target=&quot;_new&quot;&gt;Link text may not be meaningful.&lt;/a&gt;
+      </errorMsg>
+      <errorSourceCode>&lt;a href=&quot;/np4/conteudos&quot; &gt;Contedos&lt;/a&gt;</errorSourceCode>
+        
+        <sequenceID>185_9_19</sequenceID>
+        <decisionPass>Link text is meaningful when read alone (out of context).</decisionPass>
+        <decisionFail>Link text is not meaningful when read alone (out of context).</decisionFail>
+
+    </result> 
+
+  </results>
+</resultset>
