@@ -1,37 +1,38 @@
-#!/usr/bin/python
-# HTML Character Convertor
-# Replaces HTML entities in a given string - with their correct character.
 import os
-import html
-import xml.etree.ElementTree as ET
+
 
 def extract_key_value_to_dict(filename):
 
-	allLines = open(filename, 'r').readlines()
-	dictionary = {}
-	for line in allLines:
-		key,value=line.split(':')
-		dictionary[key]=value.strip()
+    all_lines = open(filename, 'r').readlines()
+    dictionary = {}
+    for line in all_lines:
+        key,value=line.split(':')
+        dictionary[key] = value.strip()
 
-	return dictionary
+    return dictionary
 
 
 def string_to_convert(string):
 
-	htmlspecialchar = extract_key_value_to_dict("spcharhtml")
-	for k,v in htmlspecialchar.items():
-		if string.find(v) != -1:
-			print(string.replace(v, k))
+    htmlspecialchar = extract_key_value_to_dict("spcharhtml")
+    for k,v in htmlspecialchar.items():
+        if string.find(v) != -1:
+            print(string.replace(v, k))
 
 
-string_to_convert("Hello world &iacute;")
-string_to_convert("Hello world &quot;")
-string_to_convert("Hello world &ndash;&quot;")
+if __name__ == '__main__':
 
-path_to_file = os.path.join('xml_test', 'cig.gov.pt.xml')
-contents = open(path_to_file).read()
-myStrLen = len(contents)
-a = html.unescape(contents)
+    files = os.listdir(os.path.join('adchecker_results'))
 
-f = open('output.xml', 'wt', encoding='utf-8')
-f.write(a)
+    for xml in files:
+        print("Cleaning file: " + xml)
+        xml_content = open(os.path.join('adchecker_results', xml)).read()
+
+        with open('chars', 'r') as f:
+            words = [line.strip() for line in f]
+
+        for word in words:
+            xml_content = xml_content.replace(word, "")
+
+        f = open(os.path.join('results', xml), 'wt', encoding='utf-8')
+        f.write(xml_content)
