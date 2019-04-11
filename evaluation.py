@@ -35,14 +35,6 @@ def evaluate_websites(file='crawler_results.txt'):
             print("Website: {} has an error: {}" .format(url, repr(e)))
             continue
 
-        # responseXml = ET.fromstring(response_xml_as_string)
-
-        for child in root.iter('*'):
-            print(child.tag)
-
-        for child in root.iter('summary'):
-            print(child.tag, child.attrib)
-
 
 def parse_url_string(url):
     """

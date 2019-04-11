@@ -79,8 +79,10 @@ def avaliacao():
             answer = input("Pretende usar o ficheiro que resultou do Crawler? (yes/no) ")
             if answer == "yes":
                 evaluate_websites()
+                break
             elif answer == "no":
                 evaluate_websites(file='sites_list.txt')
+                break
             else:
                 print("Please enter yes or no.")
     else:
