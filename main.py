@@ -48,20 +48,24 @@ def analise():
 def parse_results():
 
     files = os.listdir(os.path.join('adchecker_results'))
+    if files:
+        for xml in files:
+            print("Cleaning file: " + xml)
+            xml_content = open(os.path.join('adchecker_results', xml)).read()
 
-    for xml in files:
-        print("Cleaning file: " + xml)
-        xml_content = open(os.path.join('adchecker_results', xml)).read()
+            with open('chars', 'r') as f:
+                words = [line.strip() for line in f]
 
-        with open('chars', 'r') as f:
-            words = [line.strip() for line in f]
+            for word in words:
+                xml_content = xml_content.replace(word, "")
 
-        for word in words:
-            xml_content = xml_content.replace(word, "")
-
-        f = open(os.path.join('results', xml), 'wt', encoding='utf-8')
-        f.write(xml_content)
-
+            f = open(os.path.join('results', xml), 'wt', encoding='utf-8')
+            f.write(xml_content)
+    else:
+        print("\n Não existem resultados do ferramenta Adchecker. Por favor execute a avaliação dos resultados "
+              "primeiro.")
+        import time
+        time.sleep(3)
     menu()
 
 

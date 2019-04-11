@@ -44,6 +44,8 @@ Correr o programa (posicionar-se no directório do programa):
 ### Notas
 
 * De preferência deverá seguir os pontos pela ordem apresentada no menu.
+* Para testar o programa evite indicar um volume de sites superior a 10. A ferramenta Achecker demora algum tempo 
+a responder. **Susestão teste 10 sites**.
 * Efectuar **RESET** ao programa é uma boa forma de iniciar uma nova avaliação.
 * Se preferir não efectuar a avaliação aos sites recolhidos, por defeito a aplicação fará a avaliação aos endereços
 que constam no ficheiro *sites_list.txt* 
