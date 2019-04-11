@@ -4,13 +4,14 @@ import xml.etree.ElementTree as ET
 from urllib.parse import urlparse, ParseResult
 
 
-def evaluate_websites():
+def evaluate_websites(file='crawler_results.txt'):
     """
     :return:
     """
     api_id = 'd306f1a5fd30841c0f78325ef85993367f97da39'
 
-    with open('sites_list.txt', 'r') as f:
+    # with open('sites_list.txt', 'r') as f:
+    with open(file, 'r') as f:
         websites = [line.strip() for line in f]
 
     for website in websites:

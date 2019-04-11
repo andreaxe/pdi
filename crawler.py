@@ -11,28 +11,31 @@ checked_links = []
 global_links = []
 
 
-def crawl_web(webpage):
+def crawl_web(webpage, limit):
     """
     Method to start crawling website links
+    :param webpage:
+    :param limit:
     :return:
     """
-
     # Start of the crawling
-    parse_page(webpage)
+    limit = int(limit)
+    parse_page(webpage, limit=limit)
 
     while [len(links) > 0]:
         if links[0] not in checked_links:
-            parse_page(links[0])
+            parse_page(links[0], limit)
             checked_links.append(links[0])
         links.remove(links[0])
 
     # webpage = "http://cite.gov.pt"
 
 
-def parse_page(site):
+def parse_page(site, limit):
     """
     Funcão para descobrir sites relacionados com o Governo Português
     :param site:
+    :param limit:
     :return:
     """
     try:
@@ -60,17 +63,12 @@ def parse_page(site):
 
     print("Foram encontrados {} sites ".format(len(global_links)))
     print("Restam {} sites para investigar".format(len(links)))
-    if len(links) > 0 and len(global_links) < 1500:
+    if len(links) > 0 and len(global_links) < limit:
         return
     else:
-        with open('no_recursion2.txt', 'w') as f:
+        with open('crawler_results.txt', 'w') as f:
             for item in global_links:
                 f.write("%s\n" % item)
         print(global_links)
-        exit()  # end program
-
-
-if __name__ == '__main__':
-
-    webpage = 'https://www.eapn.pt/links/governo-da-republica-portuguesa-e-instituicoes-publicas'
-    crawl_web(webpage)
+        from main import menu
+        menu()

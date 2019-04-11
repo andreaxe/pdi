@@ -13,19 +13,20 @@ def func(pct, allvals):
 
 
 def plot_donut(data, legenda, titulo):
-    fig, ax = plt.subplots(figsize=(6, 3), subplot_kw=dict(aspect="equal"))
+    fig, ax = plt.subplots()
 
     wedges, texts, autotexts = ax.pie(data, autopct=lambda pct: func(pct, data),
                                       textprops=dict(color="w"))
-    ax.legend(wedges, legenda,
-              title="WCGA 2",
-              loc="center left",
-              bbox_to_anchor=(1, 0, 0.5, 1))
+
+    ax.legend(wedges, legenda,  frameon=False, loc='lower left')
+    # ax.legend(wedges, legenda,
+    #           title=titulo,
+    #           loc='upper left')
 
     plt.setp(autotexts, size=8, weight="bold")
 
     ax.set_title(titulo)
-
+    fig.savefig('{}.eps'.format(titulo), format='eps')
     plt.show()
 
 
@@ -37,7 +38,7 @@ def element_of_interest(argument):
     return False
 
 
-def xml_to_pandas(errors=10, potencial_problems=10, likely_problems=10):
+def xml_to_pandas(errors=50, potencial_problems=10, likely_problems=10):
 
     num_of_errors = errors
     num_of_potencial_problems = potencial_problems
@@ -71,7 +72,7 @@ def xml_to_pandas(errors=10, potencial_problems=10, likely_problems=10):
 
     # df.sort_values(by=['NumOfErrors'], inplace=True)
     print(df.head())
-    print(df.to_csv('teste.csv'))
+    df.to_csv('resultado_analise.csv')
     print(len(errors))
 
     df['NumOfErrors'] = pd.to_numeric(df['NumOfErrors'])
@@ -79,27 +80,34 @@ def xml_to_pandas(errors=10, potencial_problems=10, likely_problems=10):
     df['NumOfLikelyProblems'] = pd.to_numeric(df['NumOfLikelyProblems'])
     websites_passed = df[df['status'] == 'PASS'].count().website
     websites_failed = df[df['status'] == 'FAIL'].count().website
-    plot_donut([websites_passed, websites_failed], ['WCGA compativel', 'WCGA não compativel'], "WCGA - Resultado")
+    websites_conditional = df[df['status'] == 'CONDITIONAL PASS'].count().website
+    plot_donut([websites_passed, websites_conditional, websites_failed], ['Positivos', 'Positivos Condicionais',
+                                                                          'Negativos'], "WCGA 2.0 - Avaliação")
 
     print("Websites passed: {} ".format(df[df['status'] == 'PASS'].count().website))
     print("Websites failed: {}".format(df[df['status'] == 'FAIL'].count().website))
 
-    stat_errors = df[df['NumOfErrors'] > num_of_errors].count().website
+    only_errors = df[df['NumOfErrors'] > 0]
 
-    print("Websites with number of errors greater than {}: {}".
+    stat_errors = only_errors[only_errors['NumOfErrors'] < num_of_errors].count().website
+    inv_stat_errors = only_errors[only_errors['NumOfErrors'] >= num_of_errors].count().website
+
+    print("Websites with number of errors lower than {}: {}".
           format(num_of_errors, stat_errors))
 
-    stat_likely_errors = df[df['NumOfLikelyProblems'] > num_of_likely_problems].count().website
-    print("Websites with number of NumOfLikelyProblems greater than {}: {}".
+    stat_likely_errors = only_errors[only_errors['NumOfLikelyProblems'] < num_of_likely_problems].count().website
+    inv_stat_likely_errors = only_errors[only_errors['NumOfLikelyProblems'] >= num_of_likely_problems].count().website
+    print("Websites with number of NumOfLikelyProblems lower than {}: {}".
           format(num_of_likely_problems, stat_likely_errors))
 
-    stat_potencial_errors = df[df['NumOfPotentialProblems'] > num_of_potencial_problems].count().website
-    print("Websites with number of Potential Problems errors greater than {}: {}"
-          .format(num_of_potencial_problems,stat_potencial_errors ))
+    stat_potencial_errors = only_errors[only_errors['NumOfPotentialProblems'] < num_of_potencial_problems].count().website
+    inv_stat_potencial_errors = only_errors[only_errors['NumOfPotentialProblems'] >= num_of_potencial_problems].count().website
 
-    plot_donut([stat_errors, stat_likely_errors, stat_potencial_errors],
-               ['errors > {}'.format(num_of_errors), 'likely errors > {}'.format(num_of_likely_problems),
-                'potencial_errors > {}'.format(potencial_problems)], "WCGA - Tipos de erro")
+    print("Websites with number of Potential Problems errors lower than {}: {}"
+          .format(num_of_potencial_problems, stat_potencial_errors))
+
+    plot_donut([stat_errors, inv_stat_errors], ['erros < {}'.format(num_of_errors), 'erros > {}'.format(num_of_errors) ],
+               "WCGA 2.0 - Avaliação de erros")
 
     # ================ Website com o maior número de erros ================ #
 
@@ -114,12 +122,23 @@ def xml_to_pandas(errors=10, potencial_problems=10, likely_problems=10):
     print("Website com o maior número de erros potenciais: {} : {}".format(high_likely_errors.website,
                                                                            high_likely_errors.NumOfLikelyProblems))
 
+    # ================ Lista de 10 websites com o maior número de erros ================ #
+
+    df = df.sort_values('NumOfErrors', ascending=False).head(10)
+    df['website'] = df['website'].str.replace('.xml', '')
+    plot = df.plot(x="website", y=['NumOfErrors', 'NumOfPotentialProblems', 'NumOfLikelyProblems'], kind="bar", rot=75,
+                   fontsize=10)
+
+    fig = plot.get_figure()
+
+    fig.savefig('analise_plot.svg', dpi=1200, bbox_inches="tight")
+
+    plt.show()
 
 
-    exit()
     # print("Websites with number of potencial errors greater than {}:".format(num_of_potencial_problems))
     # df[df['NumOfPotentialProblems'] < 2].count().website))
     # print("Sites OK: " + df[df['status'] == 'PASS'].count())
 
 
-xml_to_pandas()
+# xml_to_pandas()
