@@ -1,6 +1,14 @@
 import os
 
 
+def remove_git_ignore():
+
+    dirs = ['adchecker_results', 'results']
+    for directory in dirs:
+        if os.path.isfile('{}/.gitignore'.format(directory)):
+            os.remove(os.path.join(directory, '.gitignore'))
+
+
 def extract_key_value_to_dict(filename):
     all_lines = open(filename, 'r').readlines()
     dictionary = {}
@@ -114,7 +122,7 @@ def reset():
 
 
 def menu():
-
+    remove_git_ignore()
     _clear_console()
     ok = '\033[92m' + 'OK' + '\033[0m'
     not_ok = '\033[91m' + 'NOT OK' + '\033[0m'
